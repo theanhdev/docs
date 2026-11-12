@@ -59,7 +59,7 @@
     <p class="meta">
       <strong>Ứng dụng:</strong> TV Đơn Giản - Cho Ba Mẹ (gói <code>vn.simpletv</code>)<br>
       <strong>Nhà phát triển:</strong> theanhdev<br>
-      <strong>Cập nhật lần cuối:</strong> 08/11/2026
+      <strong>Cập nhật lần cuối:</strong> 11/11/2026
     </p>
 
     <p>Chính sách này giải thích cách ứng dụng TV Đơn Giản - Cho Ba Mẹ xử lý dữ liệu khi bạn sử dụng ứng dụng. Chính sách áp dụng cho ứng dụng trên Google Play và bản cài trực tiếp.</p>
@@ -73,25 +73,28 @@
     <h2>3. Quyền truy cập</h2>
     <p>Ứng dụng dùng quyền Internet và trạng thái mạng để phát nội dung do bạn cấu hình và tự thử lại khi mạng yếu. Quyền nhận khởi động lại được dùng để khôi phục ứng dụng sau khi TV khởi động nếu bạn chọn dùng ứng dụng làm launcher. Ứng dụng đọc danh sách ứng dụng TV đã cài để hiển thị trên Trang chủ; thông tin này chỉ được xử lý trên thiết bị.</p>
 
-    <h2>4. Nội dung bên thứ ba</h2>
+    <h2>4. Chế độ trẻ và quyền Trợ năng</h2>
+    <p>Chế độ trẻ là tính năng tùy chọn do phụ huynh bật. Khi bật, ứng dụng dùng dịch vụ Trợ năng (AccessibilityService) để biết ứng dụng nào đang mở trên màn hình, từ đó cộng thời gian sử dụng và áp dụng giới hạn phút/ngày hoặc khung giờ do phụ huynh đặt. Dịch vụ chỉ đọc tên gói của cửa sổ đang hiển thị; ứng dụng đặt <code>canRetrieveWindowContent=false</code> nên không đọc nội dung màn hình, văn bản, mật khẩu hay thao tác bàn phím. Dữ liệu thời gian sử dụng và quy tắc được lưu cục bộ trên TV, không gửi đến máy chủ của nhà phát triển. Mã PIN phụ huynh gồm 4 đến 8 chữ số, được lưu dưới dạng băm SHA-256 có muối, không lưu mã gốc. PIN có thể nhập trực tiếp bằng phím số hoặc bằng phím mũi tên theo hàng số; màn hình chỉ hiện các chấm, không hiện số đã nhập. Khi bạn tắt chế độ trẻ hoặc tắt quyền Trợ năng, dịch vụ dừng theo dõi ngay.</p>
+
+    <h2>5. Nội dung bên thứ ba</h2>
     <p>Bạn tự cấu hình nguồn kênh và phim từ nhà cung cấp mà bạn có quyền sử dụng. Khi phát nội dung, ứng dụng kết nối trực tiếp đến máy chủ của nhà cung cấp đó. Ứng dụng cũng có thể dùng WebView ẩn để đọc trang nguồn do bạn cấu hình. Các trang và máy chủ này có thể nhận địa chỉ IP và thông tin kỹ thuật cần thiết để truyền nội dung, theo chính sách riêng của họ. Ứng dụng không cung cấp nội dung, không thu thập dữ liệu từ các trang đó và không vượt qua DRM hoặc giới hạn thiết bị.</p>
 
-    <h2>5. Máy chủ cấu hình cục bộ</h2>
+    <h2>6. Máy chủ cấu hình cục bộ</h2>
     <p>Ứng dụng có thể mở một máy chủ cấu hình trong mạng LAN khi bạn mở trang cấu hình. Điện thoại hoặc máy tính của bạn kết nối trực tiếp đến TV; dữ liệu cấu hình không đi qua máy chủ của nhà phát triển. Máy chủ chỉ hoạt động khi ứng dụng đang mở. Bạn nên chỉ dùng tính năng này trong mạng gia đình tin cậy.</p>
 
-    <h2>6. Chia sẻ và bán dữ liệu</h2>
+    <h2>7. Chia sẻ và bán dữ liệu</h2>
     <p>Ứng dụng không bán, không cho thuê và không chia sẻ dữ liệu cá nhân với bên thứ ba. Không có mạng quảng cáo, nhà cung cấp phân tích hay SDK theo dõi nào được tích hợp.</p>
 
-    <h2>7. Lưu trữ, xóa và bảo mật</h2>
+    <h2>8. Lưu trữ, xóa và bảo mật</h2>
     <p>Dữ liệu được lưu trên thiết bị cho đến khi bạn xóa trong ứng dụng, xóa dữ liệu ứng dụng hoặc gỡ ứng dụng. Ứng dụng không có tài khoản trực tuyến nên không có yêu cầu xóa tài khoản. Dữ liệu được giữ trong vùng lưu trữ riêng của ứng dụng; không có phương thức lưu trữ hoặc truyền dữ liệu nào an toàn tuyệt đối.</p>
 
-    <h2>8. Trẻ em</h2>
-    <p>Ứng dụng không hướng đến trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu cá nhân của trẻ em.</p>
+    <h2>9. Trẻ em</h2>
+    <p>Ứng dụng không cố ý thu thập dữ liệu cá nhân của trẻ em. Chế độ trẻ do phụ huynh cấu hình chỉ xử lý tên ứng dụng và thời gian sử dụng trên thiết bị, không gửi dữ liệu ra ngoài.</p>
 
-    <h2>9. Thay đổi chính sách</h2>
+    <h2>10. Thay đổi chính sách</h2>
     <p>Chính sách có thể được cập nhật khi ứng dụng thay đổi. Phiên bản mới sẽ hiển thị trong ứng dụng và trên trang chính sách công khai kèm ngày cập nhật.</p>
 
-    <h2>10. Liên hệ</h2>
+    <h2>11. Liên hệ</h2>
     <p>Nhà phát triển: theanhdev. Ứng dụng: TV Đơn Giản - Cho Ba Mẹ (<code>vn.simpletv</code>). Bạn có thể liên hệ qua email được công bố trên trang Google Play của ứng dụng.</p>
   </section>
 
@@ -102,7 +105,7 @@
     <p class="meta">
       <strong>App:</strong> Simple TV - For Parents (package <code>vn.simpletv</code>)<br>
       <strong>Developer:</strong> theanhdev<br>
-      <strong>Last updated:</strong> 08/11/2026
+      <strong>Last updated:</strong> 11/11/2026
     </p>
 
     <p>This policy explains how Simple TV - For Parents handles data when you use the app. It applies to the Google Play version and direct-install versions.</p>
@@ -116,25 +119,28 @@
     <h2>3. Permissions</h2>
     <p>Internet and network-state access are used to play the content you configure and to retry when the network is weak. The boot-completed permission is used to restore the app after the TV starts if you choose to use the app as a launcher. The app reads the list of installed TV apps to show them on Home; this information is processed only on the device.</p>
 
-    <h2>4. Third-party content</h2>
+    <h2>4. Child mode and Accessibility</h2>
+    <p>Child mode is an optional feature enabled by a parent. When it is on, the app uses an AccessibilityService to learn which app is in the foreground so it can count usage time and apply the daily-minute and time-window limits set by the parent. The service only reads the package name of the active window; the app sets <code>canRetrieveWindowContent=false</code>, so it does not read screen content, text, passwords or keystrokes. Usage time and rules are stored locally on the TV and are not sent to the developer’s servers. The parent PIN is 4 to 8 digits and is stored as a salted SHA-256 hash, never as plain text. It can be entered directly with number keys or with the arrow keys by row; only dots are shown, never the entered digits. Turning off child mode or disabling the Accessibility permission stops the service immediately.</p>
+
+    <h2>5. Third-party content</h2>
     <p>You configure channel and movie sources from providers you have the right to use. When content plays, the app connects directly to that provider’s servers. The app may also use a hidden WebView to read a source page you configured. Those sites and servers may receive your IP address and technical information needed to deliver the content, under their own policies. The app does not provide content, does not collect data from those sites, and does not bypass DRM or device limits.</p>
 
-    <h2>5. Local configuration server</h2>
+    <h2>6. Local configuration server</h2>
     <p>The app may start a configuration server on your local network when you open the configuration page. Your phone or computer connects directly to the TV; configuration data does not pass through the developer’s servers. The server runs only while the app is open. You should use this feature only on a trusted home network.</p>
 
-    <h2>6. Sharing and selling data</h2>
+    <h2>7. Sharing and selling data</h2>
     <p>The app does not sell, rent or share personal data with third parties. No advertising network, analytics provider or tracking SDK is integrated.</p>
 
-    <h2>7. Retention, deletion and security</h2>
+    <h2>8. Retention, deletion and security</h2>
     <p>Data remains on the device until you delete it in the app, clear the app’s data or uninstall the app. The app has no online account, so no account-deletion request is required. Data is kept in the app’s private storage; no storage or transmission method is completely secure.</p>
 
-    <h2>8. Children</h2>
-    <p>The app is not directed to children under 13 and does not knowingly collect personal data from children.</p>
+    <h2>9. Children</h2>
+    <p>The app does not knowingly collect personal data from children. Child mode, configured by a parent, only processes app package names and usage time on the device and does not send that data anywhere.</p>
 
-    <h2>9. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>This policy may be updated when the app changes. The new version will be shown in the app and on the public policy page with an updated date.</p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Developer: theanhdev. App: Simple TV - For Parents (<code>vn.simpletv</code>). You can contact us through the email address published on the app’s Google Play listing.</p>
   </section>
 </main>
